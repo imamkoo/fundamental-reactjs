@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import ClassComponent from "./ClassComponent";
+import FunctionalComponent from "./FunctionalComponent";
+import Navbar from "./components/Navbar";
+import ComponentJSX from "./ComponentJSX";
+import UserClass from "./components/Items/UserClass";
+import UserFunction from "./components/Items/UserFunction";
+import "./App.css";
+import Home from "./pages/Home";
+import Dashboard from "./pages/Dashboard";
+import List from "./pages/List";
+import Conditional from "./pages/Conditional";
+import Styling from "./pages/Styling";
+import EventHandlerClass from "./pages/EventHandlerClass";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Navbar />
+      <Header />
+      <ClassComponent />
+      <FunctionalComponent />
+      <ComponentJSX />
+      <div className=" h-screen flex flex-col justify-center ">
+        <UserClass name="Name" email="email@gmail.com" />
+        <UserFunction name="Name" email="email@gmail.com" />
+      </div>
+      <Home />
+      <Dashboard />
+      <List />
+      <Conditional />
+      <Styling /> */}
+      <EventHandlerClass />
     </div>
   );
 }
