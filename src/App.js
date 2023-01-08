@@ -12,11 +12,13 @@ import List from "./pages/List";
 import Conditional from "./pages/Conditional";
 import Styling from "./pages/Styling";
 import EventHandlerClass from "./pages/EventHandlerClass";
+import EventFunctional from "./pages/EventFunctional";
+import RefComponent from "./pages/Ref";
 
 function App() {
   return (
     <div>
-      {/* <Navbar />
+      <Navbar />
       <Header />
       <ClassComponent />
       <FunctionalComponent />
@@ -29,8 +31,10 @@ function App() {
       <Dashboard />
       <List />
       <Conditional />
-      <Styling /> */}
+      <Styling />
       <EventHandlerClass />
+      <EventFunctional />
+      <RefComponent />
     </div>
   );
 }

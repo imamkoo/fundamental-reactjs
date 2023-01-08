@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/text.svg";
+import DarkModeToggle from "./DarkModeToggle";
 
 export default function Navbar() {
   return (
@@ -13,12 +14,13 @@ export default function Navbar() {
             </span>
           </a>
           <div className="flex md:order-2">
-            <button
+            <DarkModeToggle />
+            {/* <button
               type="button"
               className="dark:text-black dark:bg-white text-white bg-black hover:bg-zinc-800  dark:hover:bg-zinc-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 cursor-pointer"
             >
               Get started
-            </button>
+            </button> */}
             <button
               data-collapse-toggle="navbar-sticky"
               type="button"

@@ -15,12 +15,13 @@ const Level = ({ counter }) => {
 };
 
 const Conditional = () => {
-  const [show, setShow] = useState(false);
+  // const [show, setShow] = useState(false);
   const [counter, setCounter] = useState(1);
 
-  const buttonToggle = () => {
-    setShow(!show);
-  };
+  // const buttonToggle = () => {
+  //   setShow(!show);
+  // };
+
   const addCounter = () => {
     setCounter(counter + 1);
   };
@@ -61,7 +62,7 @@ const Conditional = () => {
   return (
     <div className="flex flex-col justify-center items-center h-screen">
       <Level counter={counter} />
-      <Button onClick={addCounter} />
+      <Button onClick={addCounter} text="button" />
     </div>
   );
 };
